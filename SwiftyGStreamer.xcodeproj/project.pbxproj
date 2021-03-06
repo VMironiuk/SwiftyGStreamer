@@ -288,6 +288,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8U849676MP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(HOME)/Library/Developer/GStreamer/iPhone.sdk\"",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
 				INFOPLIST_FILE = SwiftyGStreamer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +311,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8U849676MP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(HOME)/Library/Developer/GStreamer/iPhone.sdk\"",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
 				INFOPLIST_FILE = SwiftyGStreamer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
