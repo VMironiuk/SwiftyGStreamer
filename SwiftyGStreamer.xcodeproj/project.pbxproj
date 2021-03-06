@@ -14,6 +14,7 @@
 		3CB6AFA125F3B8C4005FD6AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB6AFA025F3B8C4005FD6AF /* Assets.xcassets */; };
 		3CB6AFA425F3B8C4005FD6AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB6AFA225F3B8C4005FD6AF /* LaunchScreen.storyboard */; };
 		3CB6AFB025F3BA94005FD6AF /* GStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB6AFAF25F3BA94005FD6AF /* GStreamer.framework */; };
+		3CB6AFB425F3BAED005FD6AF /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB6AFB325F3BAE6005FD6AF /* libiconv.2.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3CB6AFA325F3B8C4005FD6AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CB6AFA525F3B8C4005FD6AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CB6AFAF25F3BA94005FD6AF /* GStreamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GStreamer.framework; path = ../../../Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework; sourceTree = "<group>"; };
+		3CB6AFB325F3BAE6005FD6AF /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CB6AFB425F3BAED005FD6AF /* libiconv.2.tbd in Frameworks */,
 				3CB6AFB025F3BA94005FD6AF /* GStreamer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +77,7 @@
 		3CB6AFAE25F3BA94005FD6AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3CB6AFB325F3BAE6005FD6AF /* libiconv.2.tbd */,
 				3CB6AFAF25F3BA94005FD6AF /* GStreamer.framework */,
 			);
 			name = Frameworks;
