@@ -15,6 +15,9 @@
 		3CB6AFA425F3B8C4005FD6AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB6AFA225F3B8C4005FD6AF /* LaunchScreen.storyboard */; };
 		3CB6AFB025F3BA94005FD6AF /* GStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB6AFAF25F3BA94005FD6AF /* GStreamer.framework */; };
 		3CB6AFB425F3BAED005FD6AF /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB6AFB325F3BAE6005FD6AF /* libiconv.2.tbd */; };
+		3CB6AFBB25F3BBBB005FD6AF /* fonts.conf in Resources */ = {isa = PBXBuildFile; fileRef = 3CB6AFB725F3BBBB005FD6AF /* fonts.conf */; };
+		3CB6AFBC25F3BBBB005FD6AF /* gst_ios_init.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB6AFB825F3BBBB005FD6AF /* gst_ios_init.m */; };
+		3CB6AFBD25F3BBBB005FD6AF /* Ubuntu-R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3CB6AFB925F3BBBB005FD6AF /* Ubuntu-R.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,10 @@
 		3CB6AFA525F3B8C4005FD6AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CB6AFAF25F3BA94005FD6AF /* GStreamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GStreamer.framework; path = ../../../Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework; sourceTree = "<group>"; };
 		3CB6AFB325F3BAE6005FD6AF /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
+		3CB6AFB725F3BBBB005FD6AF /* fonts.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = fonts.conf; sourceTree = "<group>"; };
+		3CB6AFB825F3BBBB005FD6AF /* gst_ios_init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gst_ios_init.m; sourceTree = "<group>"; };
+		3CB6AFB925F3BBBB005FD6AF /* Ubuntu-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-R.ttf"; sourceTree = "<group>"; };
+		3CB6AFBA25F3BBBB005FD6AF /* gst_ios_init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gst_ios_init.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,7 @@
 		3CB6AF9625F3B8C1005FD6AF /* SwiftyGStreamer */ = {
 			isa = PBXGroup;
 			children = (
+				3CB6AFB625F3BB37005FD6AF /* GStreamerKit */,
 				3CB6AF9725F3B8C1005FD6AF /* AppDelegate.swift */,
 				3CB6AF9925F3B8C1005FD6AF /* SceneDelegate.swift */,
 				3CB6AF9B25F3B8C1005FD6AF /* ViewController.swift */,
@@ -81,6 +89,17 @@
 				3CB6AFAF25F3BA94005FD6AF /* GStreamer.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CB6AFB625F3BB37005FD6AF /* GStreamerKit */ = {
+			isa = PBXGroup;
+			children = (
+				3CB6AFB725F3BBBB005FD6AF /* fonts.conf */,
+				3CB6AFB925F3BBBB005FD6AF /* Ubuntu-R.ttf */,
+				3CB6AFBA25F3BBBB005FD6AF /* gst_ios_init.h */,
+				3CB6AFB825F3BBBB005FD6AF /* gst_ios_init.m */,
+			);
+			path = GStreamerKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,6 +133,7 @@
 				TargetAttributes = {
 					3CB6AF9325F3B8C1005FD6AF = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -140,6 +160,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CB6AFBB25F3BBBB005FD6AF /* fonts.conf in Resources */,
+				3CB6AFBD25F3BBBB005FD6AF /* Ubuntu-R.ttf in Resources */,
 				3CB6AFA425F3B8C4005FD6AF /* LaunchScreen.storyboard in Resources */,
 				3CB6AFA125F3B8C4005FD6AF /* Assets.xcassets in Resources */,
 				3CB6AF9F25F3B8C1005FD6AF /* Main.storyboard in Resources */,
@@ -153,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CB6AFBC25F3BBBB005FD6AF /* gst_ios_init.m in Sources */,
 				3CB6AF9C25F3B8C1005FD6AF /* ViewController.swift in Sources */,
 				3CB6AF9825F3B8C1005FD6AF /* AppDelegate.swift in Sources */,
 				3CB6AF9A25F3B8C1005FD6AF /* SceneDelegate.swift in Sources */,
@@ -302,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8U849676MP;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -316,6 +340,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rio-engineiro.SwiftyGStreamer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -326,6 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8U849676MP;
 				FRAMEWORK_SEARCH_PATHS = (
