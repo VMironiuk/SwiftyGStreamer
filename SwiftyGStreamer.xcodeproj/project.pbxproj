@@ -18,7 +18,8 @@
 		3CB6AFBB25F3BBBB005FD6AF /* fonts.conf in Resources */ = {isa = PBXBuildFile; fileRef = 3CB6AFB725F3BBBB005FD6AF /* fonts.conf */; };
 		3CB6AFBC25F3BBBB005FD6AF /* gst_ios_init.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB6AFB825F3BBBB005FD6AF /* gst_ios_init.m */; };
 		3CB6AFBD25F3BBBB005FD6AF /* Ubuntu-R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3CB6AFB925F3BBBB005FD6AF /* Ubuntu-R.ttf */; };
-		3CB6AFC525F3BDE6005FD6AF /* GStreamerBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB6AFC325F3BDE6005FD6AF /* GStreamerBackend.m */; };
+		3CB6AFD925F3C272005FD6AF /* EaglUIVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB6AFD625F3C272005FD6AF /* EaglUIVIew.m */; };
+		3CB6AFE325F3C3B7005FD6AF /* GStreamerBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB6AFE225F3C3B7005FD6AF /* GStreamerBackend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +38,11 @@
 		3CB6AFB925F3BBBB005FD6AF /* Ubuntu-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-R.ttf"; sourceTree = "<group>"; };
 		3CB6AFBA25F3BBBB005FD6AF /* gst_ios_init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gst_ios_init.h; sourceTree = "<group>"; };
 		3CB6AFC025F3BC77005FD6AF /* SwiftyGStreamer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftyGStreamer-Bridging-Header.h"; sourceTree = "<group>"; };
-		3CB6AFC325F3BDE6005FD6AF /* GStreamerBackend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GStreamerBackend.m; sourceTree = "<group>"; };
-		3CB6AFC425F3BDE6005FD6AF /* GStreamerBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GStreamerBackend.h; sourceTree = "<group>"; };
+		3CB6AFD625F3C272005FD6AF /* EaglUIVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaglUIVIew.m; sourceTree = "<group>"; };
+		3CB6AFD725F3C272005FD6AF /* EaglUIVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaglUIVIew.h; sourceTree = "<group>"; };
+		3CB6AFDE25F3C34F005FD6AF /* GStreamerBackendDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GStreamerBackendDelegate.h; sourceTree = "<group>"; };
+		3CB6AFE125F3C3B7005FD6AF /* GStreamerBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GStreamerBackend.h; sourceTree = "<group>"; };
+		3CB6AFE225F3C3B7005FD6AF /* GStreamerBackend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GStreamerBackend.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +115,11 @@
 		3CB6AFC225F3BDC6005FD6AF /* GStreamerBackend */ = {
 			isa = PBXGroup;
 			children = (
-				3CB6AFC425F3BDE6005FD6AF /* GStreamerBackend.h */,
-				3CB6AFC325F3BDE6005FD6AF /* GStreamerBackend.m */,
+				3CB6AFD725F3C272005FD6AF /* EaglUIVIew.h */,
+				3CB6AFD625F3C272005FD6AF /* EaglUIVIew.m */,
+				3CB6AFDE25F3C34F005FD6AF /* GStreamerBackendDelegate.h */,
+				3CB6AFE125F3C3B7005FD6AF /* GStreamerBackend.h */,
+				3CB6AFE225F3C3B7005FD6AF /* GStreamerBackend.m */,
 			);
 			path = GStreamerBackend;
 			sourceTree = "<group>";
@@ -191,8 +198,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CB6AFBC25F3BBBB005FD6AF /* gst_ios_init.m in Sources */,
+				3CB6AFE325F3C3B7005FD6AF /* GStreamerBackend.m in Sources */,
 				3CB6AF9C25F3B8C1005FD6AF /* ViewController.swift in Sources */,
-				3CB6AFC525F3BDE6005FD6AF /* GStreamerBackend.m in Sources */,
+				3CB6AFD925F3C272005FD6AF /* EaglUIVIew.m in Sources */,
 				3CB6AF9825F3B8C1005FD6AF /* AppDelegate.swift in Sources */,
 				3CB6AF9A25F3B8C1005FD6AF /* SceneDelegate.swift in Sources */,
 			);
