@@ -35,6 +35,7 @@
 		3CB6AFB825F3BBBB005FD6AF /* gst_ios_init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gst_ios_init.m; sourceTree = "<group>"; };
 		3CB6AFB925F3BBBB005FD6AF /* Ubuntu-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-R.ttf"; sourceTree = "<group>"; };
 		3CB6AFBA25F3BBBB005FD6AF /* gst_ios_init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gst_ios_init.h; sourceTree = "<group>"; };
+		3CB6AFC025F3BC77005FD6AF /* SwiftyGStreamer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftyGStreamer-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 				3CB6AFA025F3B8C4005FD6AF /* Assets.xcassets */,
 				3CB6AFA225F3B8C4005FD6AF /* LaunchScreen.storyboard */,
 				3CB6AFA525F3B8C4005FD6AF /* Info.plist */,
+				3CB6AFC025F3BC77005FD6AF /* SwiftyGStreamer-Bridging-Header.h */,
 			);
 			path = SwiftyGStreamer;
 			sourceTree = "<group>";
@@ -340,6 +342,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rio-engineiro.SwiftyGStreamer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftyGStreamer/SwiftyGStreamer-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -366,6 +369,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rio-engineiro.SwiftyGStreamer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftyGStreamer/SwiftyGStreamer-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
