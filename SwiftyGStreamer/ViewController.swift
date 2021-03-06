@@ -8,12 +8,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // MARK: - Properties
+    
+    @IBOutlet private weak var label: UILabel!
+    
+    // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let gstBackend = GStreamerBackend()
+        label.text = "Welcome to \(gstBackend.getGStreamerVersion() ?? "")!"
     }
-
-
 }
 
