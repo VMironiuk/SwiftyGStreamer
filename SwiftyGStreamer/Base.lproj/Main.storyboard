@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,12 +11,79 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftyGStreamer" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="bLs-aM-l6h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0sj-ua-9q6" userLabel="VideoContainer">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="793.5"/>
+                                <subviews>
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="jGW-pg-fw8" userLabel="Video" customClass="EaglUIView">
+                                        <rect key="frame" x="47" y="277" width="320" height="240"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="240" id="Wl7-2K-Eqd"/>
+                                            <constraint firstAttribute="width" constant="320" id="uDU-8u-Q5Y"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="jGW-pg-fw8" secondAttribute="centerX" id="VLT-Ug-SMG"/>
+                                    <constraint firstAttribute="centerY" secondItem="jGW-pg-fw8" secondAttribute="centerY" id="dhB-H8-wrg"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Initializing..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GNY-su-Rs3" userLabel="Message">
+                                <rect key="frame" x="20" y="793.5" width="374" height="19.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="8lV-i6-GHn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nfd-nM-reT">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="lZA-Yr-xuU"/>
+                                    <barButtonItem systemItem="play" id="ETs-Oz-ZQq">
+                                        <connections>
+                                            <action selector="playAction:" destination="BYZ-38-t0r" id="4aM-eP-Y1J"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="pause" id="Gy1-Qs-JD1">
+                                        <connections>
+                                            <action selector="pauseAction:" destination="BYZ-38-t0r" id="3Si-eb-LNJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gcD-wk-bnU"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eNi-Nq-2kr"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0sj-ua-9q6" firstAttribute="leading" secondItem="bLs-aM-l6h" secondAttribute="leading" id="3Ug-q7-U6l"/>
+                            <constraint firstItem="Nfd-nM-reT" firstAttribute="trailing" secondItem="bLs-aM-l6h" secondAttribute="trailing" symbolic="YES" id="AbN-gD-ULP"/>
+                            <constraint firstItem="GNY-su-Rs3" firstAttribute="leading" secondItem="bLs-aM-l6h" secondAttribute="leading" constant="20" symbolic="YES" id="CdF-zZ-Tix"/>
+                            <constraint firstItem="0sj-ua-9q6" firstAttribute="trailing" secondItem="bLs-aM-l6h" secondAttribute="trailing" id="IkI-iI-fjq"/>
+                            <constraint firstAttribute="trailing" secondItem="GNY-su-Rs3" secondAttribute="trailing" constant="20" symbolic="YES" id="PqM-bK-kRd"/>
+                            <constraint firstItem="Nfd-nM-reT" firstAttribute="leading" secondItem="bLs-aM-l6h" secondAttribute="leading" symbolic="YES" id="VZc-o3-bzM"/>
+                            <constraint firstItem="0sj-ua-9q6" firstAttribute="top" secondItem="bLs-aM-l6h" secondAttribute="top" id="XKX-G9-TcB"/>
+                            <constraint firstItem="GNY-su-Rs3" firstAttribute="top" secondItem="0sj-ua-9q6" secondAttribute="bottom" id="b7F-sq-FPO"/>
+                            <constraint firstItem="GNY-su-Rs3" firstAttribute="bottom" secondItem="Nfd-nM-reT" secondAttribute="top" symbolic="YES" id="lnn-v1-HTH"/>
+                            <constraint firstItem="Nfd-nM-reT" firstAttribute="bottom" secondItem="eNi-Nq-2kr" secondAttribute="bottom" id="vYa-dg-00K"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="GNY-su-Rs3" id="Idh-If-5th"/>
+                        <outlet property="pauseButton" destination="Gy1-Qs-JD1" id="Onv-sM-47N"/>
+                        <outlet property="playButton" destination="ETs-Oz-ZQq" id="FMW-rl-wSI"/>
+                        <outlet property="videoContainerView" destination="0sj-ua-9q6" id="89e-RT-Jnd"/>
+                        <outlet property="videoHeightConstraint" destination="Wl7-2K-Eqd" id="Hhk-dI-1dS"/>
+                        <outlet property="videoView" destination="jGW-pg-fw8" id="ofu-Vf-X4H"/>
+                        <outlet property="videoWidthConstraint" destination="uDU-8u-Q5Y" id="X2Y-SP-TLY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -25,8 +91,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
