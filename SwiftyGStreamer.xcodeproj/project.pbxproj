@@ -18,6 +18,7 @@
 		3CB6AFBB25F3BBBB005FD6AF /* fonts.conf in Resources */ = {isa = PBXBuildFile; fileRef = 3CB6AFB725F3BBBB005FD6AF /* fonts.conf */; };
 		3CB6AFBC25F3BBBB005FD6AF /* gst_ios_init.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB6AFB825F3BBBB005FD6AF /* gst_ios_init.m */; };
 		3CB6AFBD25F3BBBB005FD6AF /* Ubuntu-R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3CB6AFB925F3BBBB005FD6AF /* Ubuntu-R.ttf */; };
+		3CB6AFC525F3BDE6005FD6AF /* GStreamerBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB6AFC325F3BDE6005FD6AF /* GStreamerBackend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		3CB6AFB925F3BBBB005FD6AF /* Ubuntu-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-R.ttf"; sourceTree = "<group>"; };
 		3CB6AFBA25F3BBBB005FD6AF /* gst_ios_init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gst_ios_init.h; sourceTree = "<group>"; };
 		3CB6AFC025F3BC77005FD6AF /* SwiftyGStreamer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftyGStreamer-Bridging-Header.h"; sourceTree = "<group>"; };
+		3CB6AFC325F3BDE6005FD6AF /* GStreamerBackend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GStreamerBackend.m; sourceTree = "<group>"; };
+		3CB6AFC425F3BDE6005FD6AF /* GStreamerBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GStreamerBackend.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				3CB6AFB625F3BB37005FD6AF /* GStreamerKit */,
+				3CB6AFC225F3BDC6005FD6AF /* GStreamerBackend */,
 				3CB6AF9725F3B8C1005FD6AF /* AppDelegate.swift */,
 				3CB6AF9925F3B8C1005FD6AF /* SceneDelegate.swift */,
 				3CB6AF9B25F3B8C1005FD6AF /* ViewController.swift */,
@@ -102,6 +106,15 @@
 				3CB6AFB825F3BBBB005FD6AF /* gst_ios_init.m */,
 			);
 			path = GStreamerKit;
+			sourceTree = "<group>";
+		};
+		3CB6AFC225F3BDC6005FD6AF /* GStreamerBackend */ = {
+			isa = PBXGroup;
+			children = (
+				3CB6AFC425F3BDE6005FD6AF /* GStreamerBackend.h */,
+				3CB6AFC325F3BDE6005FD6AF /* GStreamerBackend.m */,
+			);
+			path = GStreamerBackend;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +192,7 @@
 			files = (
 				3CB6AFBC25F3BBBB005FD6AF /* gst_ios_init.m in Sources */,
 				3CB6AF9C25F3B8C1005FD6AF /* ViewController.swift in Sources */,
+				3CB6AFC525F3BDE6005FD6AF /* GStreamerBackend.m in Sources */,
 				3CB6AF9825F3B8C1005FD6AF /* AppDelegate.swift in Sources */,
 				3CB6AF9A25F3B8C1005FD6AF /* SceneDelegate.swift in Sources */,
 			);
